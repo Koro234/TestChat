@@ -1,0 +1,191 @@
+[gd_scene format=2]
+
+[node name="ServerMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1.18787
+margin_top = 0.593933
+margin_right = -1.18787
+margin_bottom = 0.593933
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackButton" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 107.0
+margin_top = 459.594
+margin_right = -796.0
+margin_bottom = -83.4061
+text = "Back"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartButton" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 812.592
+margin_top = 464.939
+margin_right = -90.4081
+margin_bottom = -78.0607
+text = "Start"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 251.0
+margin_top = 94.0
+margin_right = -181.0
+margin_bottom = -373.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Labels" type="VBoxContainer" parent="HBoxContainer"]
+margin_right = 100.0
+margin_bottom = 133.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelPort" type="PanelContainer" parent="HBoxContainer/Labels"]
+margin_right = 100.0
+margin_bottom = 41.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="HBoxContainer/Labels/PanelPort"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 93.0
+margin_bottom = 34.0
+size_flags_horizontal = 9
+size_flags_vertical = 3
+text = "Port:"
+align = 1
+valign = 1
+
+[node name="PanelQuantity" type="PanelContainer" parent="HBoxContainer/Labels"]
+margin_top = 45.0
+margin_right = 100.0
+margin_bottom = 87.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="HBoxContainer/Labels/PanelQuantity"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 93.0
+margin_bottom = 35.0
+size_flags_horizontal = 9
+size_flags_vertical = 3
+text = "Quantity:"
+align = 1
+valign = 1
+
+[node name="PanelName" type="PanelContainer" parent="HBoxContainer/Labels"]
+margin_top = 91.0
+margin_right = 100.0
+margin_bottom = 133.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="HBoxContainer/Labels/PanelName"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 93.0
+margin_bottom = 35.0
+size_flags_horizontal = 9
+size_flags_vertical = 3
+text = "Name Server:"
+align = 1
+valign = 1
+
+[node name="LinesEdit" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 104.0
+margin_right = 592.0
+margin_bottom = 133.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelPort" type="PanelContainer" parent="HBoxContainer/LinesEdit"]
+margin_right = 488.0
+margin_bottom = 41.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PortEdit" type="LineEdit" parent="HBoxContainer/LinesEdit/PanelPort"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 481.0
+margin_bottom = 34.0
+size_flags_horizontal = 11
+size_flags_vertical = 3
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelQuantity" type="PanelContainer" parent="HBoxContainer/LinesEdit"]
+margin_top = 45.0
+margin_right = 488.0
+margin_bottom = 87.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="QuantityEdit" type="LineEdit" parent="HBoxContainer/LinesEdit/PanelQuantity"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 481.0
+margin_bottom = 35.0
+size_flags_horizontal = 11
+size_flags_vertical = 3
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelQuantity2" type="PanelContainer" parent="HBoxContainer/LinesEdit"]
+margin_top = 91.0
+margin_right = 488.0
+margin_bottom = 133.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NameEdit" type="LineEdit" parent="HBoxContainer/LinesEdit/PanelQuantity2"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 481.0
+margin_bottom = 35.0
+size_flags_horizontal = 11
+size_flags_vertical = 3
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
