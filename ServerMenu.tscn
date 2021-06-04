@@ -168,7 +168,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="PanelQuantity2" type="PanelContainer" parent="HBoxContainer/LinesEdit"]
+[node name="PanelName" type="PanelContainer" parent="HBoxContainer/LinesEdit"]
 margin_top = 91.0
 margin_right = 488.0
 margin_bottom = 133.0
@@ -178,7 +178,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="NameEdit" type="LineEdit" parent="HBoxContainer/LinesEdit/PanelQuantity2"]
+[node name="NameEdit" type="LineEdit" parent="HBoxContainer/LinesEdit/PanelName"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 481.0
