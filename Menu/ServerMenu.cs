@@ -28,6 +28,6 @@ public class ServerMenu : Control
     }
     private void _on_Back_pressed()
     {
-        GetTree().ChangeScene("res://MainMenu.tscn");
+        GetTree().ChangeScene("res://Menu/MainMenu.tscn");
     }
 }

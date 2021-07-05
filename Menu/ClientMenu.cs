@@ -10,8 +10,8 @@ public class ClientMenu : Control
     private LineEdit UserName;
     public override void _Ready()
     {
-        Start = GetNode<Button>("Start");
-        Back = GetNode<Button>("Back");
+        Start = GetNode<Button>("StartButton");
+        Back = GetNode<Button>("BackButton");
         Port = GetNode<LineEdit>("HBoxContainer/LinesEdit/PanelPort/PortEdit");
         Ip = GetNode<LineEdit>("HBoxContainer/LinesEdit/PanelIp/IpEdit");
         UserName = GetNode<LineEdit>("HBoxContainer/LinesEdit/PanelName/NameEdit");
@@ -28,6 +28,6 @@ public class ClientMenu : Control
     }
     private void _on_Back_pressed()
     {
-        GetTree().ChangeScene("res://MainMenu.tscn");
+        GetTree().ChangeScene("res://Menu/MainMenu.tscn");
     }
 }

@@ -17,11 +17,23 @@ ServerScene = ExtResource( 3 )
 [node name="ServerButton" type="Button" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 613.269
+margin_left = 730.604
 margin_top = 293.194
-margin_right = -267.731
+margin_right = -150.396
 margin_bottom = -251.806
 text = "Server"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ClientButton" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 202.667
+margin_top = 282.667
+margin_right = -671.333
+margin_bottom = -256.333
+text = "Client"
 __meta__ = {
 "_edit_use_anchors_": false
 }
