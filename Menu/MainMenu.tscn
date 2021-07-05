@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://MainMenu.cs" type="Script" id=1]
-[ext_resource path="res://ClientMenu.tscn" type="PackedScene" id=2]
-[ext_resource path="res://ServerMenu.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Menu/MainMenu.cs" type="Script" id=1]
+[ext_resource path="res://Menu/ClientMenu.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Menu/ServerMenu.tscn" type="PackedScene" id=3]
 
 [node name="MainMenu" type="Control"]
 anchor_right = 1.0
@@ -22,18 +22,6 @@ margin_top = 293.194
 margin_right = -267.731
 margin_bottom = -251.806
 text = "Server"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ClientButton" type="Button" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 248.595
-margin_top = 296.757
-margin_right = -632.405
-margin_bottom = -248.243
-text = "Client"
 __meta__ = {
 "_edit_use_anchors_": false
 }
