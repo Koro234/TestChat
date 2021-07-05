@@ -37,6 +37,3 @@ text = "Client"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[connection signal="pressed" from="ServerButton" to="." method="_on_ServerButton_pressed"]
-[connection signal="pressed" from="ClientButton" to="." method="_on_ClientButton_pressed"]
