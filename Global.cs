@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public class Global
+public class Global : Node
 {
     public string UserName {get; set;} = "User";
     public string ServerName {get; set;} = "Server";
