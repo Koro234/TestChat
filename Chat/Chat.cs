@@ -8,16 +8,19 @@ public class Chat : Control
     private Button Send;
     private LineEdit TextLine;
     private string[][] Chanals = new string[2][];
+    private ISender Network;
     public override void _Ready()
     {
         UserName = (Label)GetNode("VBoxContainer/HBoxContainer/Name");
-        Send = (Button)GetNode("VBoxContainer/HBoxContainer/Send");
+        Send = (Button)GetNode("VBoxContainer/HBoxContainer/SendButton");
         TextLine = (LineEdit)GetNode("VBoxContainer/HBoxContainer/Messenge");
         ChatLog = (RichTextLabel)GetNode("VBoxContainer/RichTextLabel");
         Chanals[0] = new string[]{"Server", "#b80000"};
         Chanals[1] = new string[]{"Other", "#a13aff"};
+        Network = (ISender)GetNode("/root/Network");
+        Send.Connect("pressed", this, nameof(_on_Send_pressed));
     }
-    public void Add_Messenge(int ChatChanal, string username, string text)
+    public void AddMessenge(int ChatChanal, string username, string text)
     {
         ChatLog.BbcodeText += "\n";
         ChatLog.BbcodeText += "[color=" + Chanals[ChatChanal][1] + "]";;
@@ -28,6 +31,12 @@ public class Chat : Control
     }
     public void _on_Send_pressed()
     {
+        if (TextLine.Text == "")
+        {
+            return;
+        }
+        Network.MessengeSender(UserName.Text, TextLine.Text);
+        TextLine.Text = "";
     }
     public void SetName()
     {

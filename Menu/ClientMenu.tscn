@@ -144,6 +144,7 @@ margin_right = 525.0
 margin_bottom = 34.0
 size_flags_horizontal = 11
 size_flags_vertical = 3
+text = "localhost"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -166,6 +167,7 @@ margin_right = 525.0
 margin_bottom = 35.0
 size_flags_horizontal = 11
 size_flags_vertical = 3
+text = "8888"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -188,6 +190,7 @@ margin_right = 525.0
 margin_bottom = 35.0
 size_flags_horizontal = 11
 size_flags_vertical = 3
+text = "Client"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false

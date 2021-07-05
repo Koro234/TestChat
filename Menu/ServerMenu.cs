@@ -24,7 +24,7 @@ public class ServerMenu : Control
         Global.Port = Port.Text.ToInt();
         Global.Quantity = Quantity.Text.ToInt();
         Global.ServerName = NameServer.Text;
-        GetTree().ChangeScene("res://Server.tscn");
+        GetTree().ChangeScene("res://Network/NetworkServer.tscn");
     }
     private void _on_Back_pressed()
     {

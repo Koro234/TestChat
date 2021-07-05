@@ -24,7 +24,7 @@ public class ClientMenu : Control
         Global.Port = Port.Text.ToInt();
         Global.Ip = Ip.Text;
         Global.UserName = UserName.Text;
-        GetTree().ChangeScene("res://Client.tscn");
+        GetTree().ChangeScene("res://Network/NetworkClient.tscn");
     }
     private void _on_Back_pressed()
     {
